@@ -1,0 +1,169 @@
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-family: "Hanken Grotesk", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.your-result{
+  background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 0 0 15px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.your-result h3{
+  color: hsl(241, 100%, 89%);
+  text-align: center;
+  margin: 20px;
+}
+
+.circle{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  color: hsl(241, 100%, 89%);
+  text-align: center;
+  font-size: 11px;
+}
+
+.circle h1{
+  color: whitesmoke;
+  font-size: 50px;
+  padding: 10px 0 0 0;
+}
+
+h2{
+  color: aliceblue;
+  margin: 10px
+}
+
+.your-result p{
+  color: hsl(241, 100%, 89%);
+  padding: 0 40px 40px;
+  text-align: center;
+}
+
+.summary h3{
+  margin: 15px 15px 0 10px;
+  padding: 0 20px;
+}
+
+.summary{
+  display: flex;
+  flex-direction: column;
+}
+.summary div{
+margin: 10px;
+padding: 5px;
+border-radius: 10px;
+}
+
+.results{
+display: flex;
+flex-direction: column;
+}
+
+.results p{
+align-self: center;
+padding-right: 15px;
+}
+.first-result-dsc{
+  color: hsl(0, 100%, 67%);
+}
+
+.first-result{
+  background-color: hsla(0, 100%, 67%, 0.2);
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.second-result-dsc{
+  color: hsl(39, 100%, 56%)
+}
+
+.second-result{
+  background-color: hsla(39, 100%, 56%, 0.2);
+  display: flex;
+  justify-content: space-between;
+}
+
+.third-result-dsc{
+  color: hsl(166, 100%, 37%)
+}
+
+.third-result{
+  background-color: hsla(166, 100%, 37%, 0.2);
+  display: flex;
+  justify-content: space-between;
+}
+
+.fourth-result-dsc{
+  color: hsl(234, 85%, 45%)
+}
+
+.fourth-result{
+  background-color: hsla(234, 85%, 45%, 0.2);
+  display: flex;
+  justify-content: space-between;
+}
+
+button{
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  color: white;
+  background-color: hsl(224, 30%, 27%);
+  border-radius: 20px;
+  padding: 10px;
+  margin: 0 25px 25px;
+  cursor: pointer;
+}
+
+button:hover{
+  background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+@media (min-width: 600px) {
+  body{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
+  }
+
+  .your-result{
+    border-radius: 15px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    box-shadow: 0 7px 7px 7px hsl(224, 23%, 55%, 0.1)
+  }
+
+  .summary{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    box-shadow: 0 7px 7px 7px hsl(224, 23%, 55%, 0.1);
+    border-radius: 0 15px 15px 0;
+  }
+
+  .circle{
+    height: 200px;
+    width: 200px;
+  }
+
+  .circle h1{
+    font-size: 100px;
+    padding: 20px 20px 0 20px;
+  }
+}
